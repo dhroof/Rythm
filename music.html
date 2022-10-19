@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Rythm</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <a href="https://icons8.com/icon/3839/shuffle"></a>
+    <script src="https://kit.fontawesome.com/bb12a6b98e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="music.css">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <header>
+            <!-- Navbar -->
+            <nav id="top-nav" class="container-fluid">
+                <p>
+                    <a href="#">RYTHM</a>
+                </p>
+            </nav>
+
+            <!-- Side Navbar -->
+            <nav id="side-nav">
+                <div id="logo">
+                    <a href="#">RYTHM</a>
+                </div>
+                <div id="searchbar">
+                    <div id="icon-search" class="icons"><i class="fas fa-search"></i></div>
+                    <input type="text" id="bar" placeholder="Search">
+                    <button id="icon-voice"><i class="fas fa-microphone"></i></button>
+                </div>
+                <ul>
+                    <a href="#">
+                        <li><i class="fas fa-home icons-nav"></i>Home</li>
+                    </a>
+                    <a href="#">
+                        <li><i class="fas fa-th-large icons-nav"></i>Browse</li>
+                    </a>
+                    <a href="#">
+                        <li><i class="fas fa-compact-disc icons-nav"></i>Your Library</li>
+                    </a>
+                </ul>
+                <hr>
+                <!-- Queue -->
+                <div class="queue">
+                    <h3>Queue</h3>
+                    <a onclick="showFooter()">
+                        <div class="song-box">
+                            <p class="s-no">1</p>
+                            <img src="https://britasia.tv/wp-content/uploads/2020/09/Eh09An1VkAEohgB.jpg"
+                                class="icon-songs">
+                            <p class="title">Brown Munde</p>
+                            <p class="duration">4:14</p>
+                        </div>
+                    </a>
+
+                </div>
+            </nav>
+
+        </header>
+
+        <main>
+
+            <!-- TOP ALBUMS -->
+
+            <section id="top_albums">
+                <div class="main-topics">
+                    <p>Top Albums</p>
+                </div>
+                <div class="carosuel">
+                    <span id="slider-image-1"></span>
+                    <span id="slider-image-2"></span>
+                    <span id="slider-image-3"></span>
+                    <div class="image-box">
+                        <img src="https://is3-ssl.mzstatic.com/image/thumb/Features114/v4/3d/0b/e4/3d0be4ce-bc70-f142-363f-4901a91e2c60/source/900x516sr.webp"
+                            id="img1">
+                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Features124/v4/85/1f/c7/851fc746-97c3-a380-cf54-b9dead85f6ad/source/900x516sr.webp"
+                            id="img2">
+                        <img src="https://is5-ssl.mzstatic.com/image/thumb/Features124/v4/b6/c8/2d/b6c82da2-2492-6d2a-e69f-95ebb7d3d2c7/source/900x516sr.webp"
+                            id="img3">
+                    </div>
+                    <div class="button-container">
+                        <a href="#slider-image-1"></a>
+                        <a href="#slider-image-2"></a>
+                        <a href="#slider-image-3"></a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- LATEST RELEASE -->
+
+            <section class="container-fluid" id="latest_release">
+                <div class="main-topics">
+                    <p>Latest Release</p>
+                </div>
+                <div class="row">
+                    <div class="thumbnail-square">
+                        <img src="https://m.media-amazon.com/images/I/81xTrGw-EAL._SS500_.jpg" class="" alt="...">
+                        <div class="button-div">
+                            <button type="submit" class="icon-play" onclick="showFooter()"><i
+                                    class="fas fa-play"></i></button>
+                            <button type="submit" class="icon-menu"><i class="fas fa-caret-down"></i></button>
+                            <div class="dropdown-content">
+                                <a href="#">Save to Your Playlist</a>
+                                <a href="#">Add to Your Queue</a>
+                                <a href="#">Share <i class="fas fa-share-square"></i></a>
+                            </div>
+                        </div>
+                        <p><b>Toosie Slide</b> <br> Drake</p>
+                    </div>
+                    <div class="thumbnail-square opa-0"></div>
+                    <div class="thumbnail-square opa-0"></div>
+            </section>
+
+            <!-- TOP ARTISTS -->
+
+            <section class="container" id="similar-artists">
+                <div class="main-topics">
+                    <p>Similar Artists</p>
+                </div>
+                <div class="row gap">
+                    <div class="thumbnail-rounded">
+                        <a href="artists/apdhillon.html">
+                            <img
+                                src="https://is2-ssl.mzstatic.com/image/thumb/Music114/v4/64/79/2d/64792dbe-afb6-bd1e-07f3-57f2cb34879d/pr_source.png/800x800bb.jpeg">
+                            <button type="submit" class="icon-play" onclick="showFooter()"><i
+                                    class="fas fa-play"></i></button>
+                            <p>AP Dhillon</p>
+                        </a>
+                    </div>
+                    <div class="thumbnail-rounded">
+                        <a href="artists/diljitdosanjh.html">
+                            <img src="https://i.scdn.co/image/80321b3de551024d02dbfd91769721c588d0e887">
+                            <button type="submit" class="icon-play" onclick="showFooter()"><i
+                                    class="fas fa-play"></i></button>
+                            <p>Diljit Dosanjh</p>
+                        </a>
+                    </div>
+                    <div class="thumbnail-rounded">
+                        <a href="artists/divine.html">
+                            <img src="https://i.scdn.co/image/5420512416c7fdc1a442839894b6e596f4c5b110">
+                            <button type="submit" class="icon-play" onclick="showFooter()"><i
+                                    class="fas fa-play"></i></button>
+                            <p>Divine</p>
+                        </a>
+                    </div>
+                    <div class="thumbnail-rounded">
+                        <a href="artists/theweeknd.html">
+                            <img src="https://i.scdn.co/image/d9a875c37277c35b94c60c00d2cd256db098505d">
+                            <button type="submit" class="icon-play" onclick="showFooter()"><i
+                                    class="fas fa-play"></i></button>
+                            <p>The Weeknd</p>
+                        </a>
+                    </div>
+                    <div class="thumbnail-rounded">
+                        <a href="artists/billie.html">
+                            <img src="https://i.pinimg.com/736x/89/8e/f7/898ef7ace2f82938e9db1d923a0b3ded.jpg">
+                            <button type="submit" class="icon-play" onclick="showFooter()"><i
+                                    class="fas fa-play"></i></button>
+                            <p>Billie Eilish</p>
+                        </a>
+                    </div>
+                    <div class="thumbnail-rounded">
+                        <a href="artists/ritviz.html">
+                            <img src="https://i.scdn.co/image/c1df1ba5ef343f2a5713c238c63fbd9b8b66e9c6">
+                            <button type="submit" class="icon-play" onclick="showFooter()"><i
+                                    class="fas fa-play"></i></button>
+                            <p>Ritviz</p>
+                        </a>
+                    </div>
+                    <div class="thumbnail-rounded opa-0"></div>
+                    <div class="thumbnail-rounded opa-0"></div>
+                </div>
+            </section>
+
+            <!-- MUSIC BY MOOD -->
+
+            <section class="container" id="music_mood">
+                <div class="main-topics">
+                    <p>Music by Mood</p>
+                </div>
+                <div class="row">
+                    <div class="thumbnail-wide">
+                        <a href="#">
+                            <div class="zoom-image">
+                                <img
+                                    src="https://is5-ssl.mzstatic.com/image/thumb/Features114/v4/1b/19/ab/1b19abbe-88c1-6a52-e492-afaee602cc85/source/680x382sr.webp">
+                            </div>
+                            <p>Fitness</p>
+                        </a>
+                    </div>
+                    <div class="thumbnail-wide">
+                        <a href="#">
+                            <div class="zoom-image">
+                                <img
+                                    src="https://is1-ssl.mzstatic.com/image/thumb/Features124/v4/80/ff/ee/80ffee9c-43bc-aa8f-5021-75cd8ebf2091/source/680x382sr.webp">
+                            </div>
+                            <p>Sleep</p>
+                        </a>
+                    </div>
+                    <div class="thumbnail-wide d-s-none d-m-block">
+                        <a href="#">
+                            <div class="zoom-image">
+                                <img
+                                    src="https://is1-ssl.mzstatic.com/image/thumb/Features114/v4/56/ff/f0/56fff08e-eaa6-f81f-283d-54918a0b7adc/source/680x382sr.webp">
+                            </div>
+                            <p>Romance</p>
+                        </a>
+                    </div>
+                    <div class="thumbnail-wide d-s-none d-l-block">
+                        <a href="#">
+                            <div class="zoom-image">
+                                <img
+                                    src="https://is1-ssl.mzstatic.com/image/thumb/Features114/v4/76/02/ec/7602ec3f-3407-8973-7e81-e0919c6f1dd7/source/680x382sr.webp">
+                            </div>
+                            <p>Motivation</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <div id="now-playing">
+                <div class="np-left">
+                    <img src="https://m.media-amazon.com/images/I/81xTrGw-EAL._SS500_.jpg" id="song-image">
+                    <p class="detail">
+                        <b id="title">Toosie Slide</b>
+                        <br>
+                        <b id="artist">Drake</b>
+                    </p>
+                    <i class="far fa-heart"></i>
+                </div>
+                <audio src="songs/toosieslide.mp3" id="myAudio"></audio>
+                <div class="np-mid">
+                    <div class="controls">
+                        <i class="fas fa-random icon-controls" id="icon-shuffle"></i>
+                        <i class="fas fa-step-backward icon-controls" id="icon-prev"></i>
+                        <i class="fas fa-play icon-controls" id="icon-play"></i>
+                        <i class="fas fa-step-forward icon-controls" id="icon-next"></i>
+                        <i class="fas fa-redo icon-controls" id="icon-repeat"></i>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="pb-controls" id="current-time">0:00</p>
+                        <div id="pb-box">
+                            <div id="np-bar"></div>
+                        </div>
+                        <p class="pb-controls" id="duration">0:00</p>
+                    </div>
+                </div>
+                <div class="np-right">
+                    <div class="extra-controls">    
+                        <i class="fas fa-volume-up"></i>
+                        <input type="range" id="volume-bar" min="1" max="100" value="100" class="volume-slider">
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="jquery.js"></script>
+    <script src="music.js"></script>
+    <script src="topArtists.js"></script>
+</body>
+
+</html>
